@@ -1,4 +1,7 @@
 package lk.ijse.spring.repo;
 
-public interface FileUploadRepo {
+import lk.ijse.spring.entity.File;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface FileUploadRepo extends JpaRepository<File,Integer> {
 }
